@@ -1,13 +1,13 @@
 {
-  "name": "@weblueth/custom",
-  "version": "0.0.0-alpha.1",
-  "description": "@weblueth, custom template.",
+  "name": "@weblueth/microbit",
+  "version": "0.0.2",
+  "description": "Web Bluetooth react micro:bit.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jp-rad/weblueth-custom.git"
+    "url": "git+https://github.com/jp-rad/weblueth-microbit.git"
   },
   "targets": {
     "pages": {
@@ -31,7 +31,8 @@
   "keywords": [
     "react",
     "typescript",
-    "web bluetooth"
+    "web bluetooth",
+    "micro:bit"
   ],
   "author": "jp-rad",
   "license": "MIT",
@@ -42,6 +43,8 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
+    "@weblueth/react": "^0.0.4",
+    "microbit-web-bluetooth": "^0.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

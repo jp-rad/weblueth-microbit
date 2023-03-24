@@ -1,6 +1,6 @@
 {
   "name": "@weblueth/microbit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Web Bluetooth react micro:bit.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

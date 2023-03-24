@@ -5,7 +5,13 @@ import { ButtonService, ButtonState } from 'microbit-web-bluetooth/types/service
 import { Services } from 'microbit-web-bluetooth';
 
 interface Props extends WbxServiceProps<ButtonService> {
+    /**
+     * Button A state changed event
+     */
     onButtonAStateChanged?: WbxCustomEventCallback<ButtonState>;
+    /**
+     * Button B state changed event
+     */
     onButtonBStateChanged?: WbxCustomEventCallback<ButtonState>;
 }
 
@@ -18,20 +24,16 @@ export function MicrobitButton(props: Props) {
         const target = bound.target.buttonService;
         if (target) {
             if (bound.binding) {
-                // button A
                 if (props.onButtonAStateChanged) {
                     target.addEventListener(buttonastatechanged, props.onButtonAStateChanged)
                 }
-                // button B
                 if (props.onButtonBStateChanged) {
                     target.addEventListener(buttonbstatechanged, props.onButtonBStateChanged)
                 }
             } else {
-                // button A
                 if (props.onButtonAStateChanged) {
                     target.removeEventListener(buttonastatechanged, props.onButtonAStateChanged)
                 }
-                // button B
                 if (props.onButtonBStateChanged) {
                     target.removeEventListener(buttonbstatechanged, props.onButtonBStateChanged)
                 }

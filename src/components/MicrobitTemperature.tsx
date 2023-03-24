@@ -5,6 +5,9 @@ import { TemperatureService } from 'microbit-web-bluetooth/types/services/temper
 import { Services } from 'microbit-web-bluetooth';
 
 interface Props extends WbxServiceProps<TemperatureService> {
+    /**
+     * Temperature changed event
+     */
     onTemperatureChanged?: WbxCustomEventCallback<number>;
     /**
      * Determines the frequency with which temperature data is updated in milliseconds(UINT16).

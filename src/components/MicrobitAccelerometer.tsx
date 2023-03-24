@@ -5,7 +5,13 @@ import { AccelerometerData, AccelerometerPeriod, AccelerometerService } from 'mi
 import { Services } from 'microbit-web-bluetooth';
 
 interface Props extends WbxServiceProps<AccelerometerService> {
+    /**
+     * Accelerometer data changed event
+     */
     onAccelerometerDataChanged?: WbxCustomEventCallback<AccelerometerData>;
+    /**
+     * Set accelerometer sample period
+     */
     accelerometerPeriod?: AccelerometerPeriod;
 }
 

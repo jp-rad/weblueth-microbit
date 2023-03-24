@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { WbBoundCallback } from '@weblueth/statemachine';
 import { WbxCustomEventCallback, WbxServiceProps, WbxServices } from '@weblueth/react';
 import { UartService } from 'microbit-web-bluetooth/types/services/uart';

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { WbBoundCallback } from '@weblueth/statemachine';
-import { WbxCustomEventCallback, WbxServiceProps, WbxServices } from '@weblueth/react';
+import { WbxServiceProps, WbxServices } from '@weblueth/react';
 import { DeviceInformationService } from 'microbit-web-bluetooth/types/services/device-information';
 import { Services } from 'microbit-web-bluetooth';
 
